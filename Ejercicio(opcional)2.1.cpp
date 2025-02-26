@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
     // Inicializa los arreglos con los nombres y cantidades de los productos
-    string nombres[] = {"Manzanas", "Plátanos", "Naranjas", "Peras"};
+    string nombres[] = {"Manzanas", "Platanos", "Naranjas", "Peras"};
     int cantidades[] = {50, 30, 40, 20};
     const int num_productos = 4; // Número de productos
     
@@ -49,7 +49,7 @@ int main() {
                 }
                 break;
             }
-            case 3:
+            case 3:{
                 // Opción 3: Mostrar el producto con mayor cantidad
                 int max_index = 0;
                 for (int i = 1; i < num_productos; i++) {
@@ -59,6 +59,7 @@ int main() {
                 }
                 cout << "El producto con mayor cantidad es " << nombres[max_index] << " con " << cantidades[max_index] << " unidades." << endl;
                 break;
+            }
             case 4: {
                 // Opción 4: Ordenar productos por cantidad
                 for (int i = 0; i < num_productos - 1; i++) {
@@ -76,13 +77,15 @@ int main() {
                     cout << nombres[i] << ": " << cantidades[i] << " unidades" << endl;
                 break;
             }
-            case 5:
+            case 5:{
                 // Opción 5: Salir del programa
                 cout << "Saliendo..." << endl;
                 break;
-            default:
+            }
+            default:{
                 // Opción inválida
                 cout << "Opción inválida." << endl;
+            }
         }
     } while (opcion != 5); // Repite el menú hasta que el usuario elija salir
     
