@@ -8,3 +8,5 @@ Grupo: **Ivan Daniel Carpentier, Jonatan García Vásquez**
 - **Ejercicios opcionales:**
     - **Sistema de gestión de inventarios ->** Ejercicio(opcional)2.1.cpp
     - **Memoria Dinámica para un Sistema de Reservas de Hotel ->** Ejercicio(opcional)3.1cpp
+- **parcial ivan daniel carpentier rodriguez:**
+    - **parcial ->** parcial1.cpp
