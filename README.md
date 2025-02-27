@@ -7,4 +7,4 @@ Grupo: **Ivan Daniel Carpentier, Jonatan García Vásquez**
     - **8.1 Interes compuesto ->** ejercicio8.1.cpp
 - **Ejercicios opcionales:**
     - **Sistema de gestión de inventarios ->** Ejercicio(opcional)2.1.cpp
-    - **Memoria Dinámica para un Sistema de Reservas de Hotel ->** Ejercicio
+    - **Memoria Dinámica para un Sistema de Reservas de Hotel ->** Ejercicio(opcional)3.1cpp
