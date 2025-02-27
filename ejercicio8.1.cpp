@@ -1,13 +1,14 @@
 #include <iostream>
+#include <cmath>
 
 int main(int argc, char const *argv[])
 {
     // Declaración de variables
-    int A; // Monto final
-    int P; // Cantidad inicial invertida
-    int R; // Tasa de interés anual
-    int N; // Número de veces que se aplica el interés al año
-    int T; // Cantidad de años
+    float A; // Monto final
+    float P; // Cantidad inicial invertida
+    float R; // Tasa de interés anual
+    float N; // Número de veces que se aplica el interés al año
+    float T; // Cantidad de años
 
     // Solicitar al usuario la cantidad inicial invertida
     std::cout << "Ingrese un número para cantidad inicial invertida: ";
@@ -25,9 +26,7 @@ int main(int argc, char const *argv[])
     std::cout << "Ingrese un número para cantidad de años: ";
     std::cin >> T;
 
-    // Calcular el monto final utilizando la fórmula del interés compuesto
-    A = P * (1 + R / N) ^ (N * T);
-
+    A = P * pow((1 + R / N), (N * T));
     // Mostrar el monto final
     std::cout << "El monto final es: " << A << std::endl;
 
