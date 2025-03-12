@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/EjercicioOpcional2.dir/EjercicioOpcional2.1.cpp.o -o EjercicioOpcional2 

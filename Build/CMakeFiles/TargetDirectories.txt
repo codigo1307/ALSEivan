@@ -1,0 +1,14 @@
+/home/jonatan/GitIvan/Build/CMakeFiles/edit_cache.dir
+/home/jonatan/GitIvan/Build/CMakeFiles/rebuild_cache.dir
+/home/jonatan/GitIvan/Build/Parcial/CMakeFiles/Parcial.dir
+/home/jonatan/GitIvan/Build/Parcial/CMakeFiles/edit_cache.dir
+/home/jonatan/GitIvan/Build/Parcial/CMakeFiles/rebuild_cache.dir
+/home/jonatan/GitIvan/Build/Tarea1/CMakeFiles/EjercicioOpcional2.dir
+/home/jonatan/GitIvan/Build/Tarea1/CMakeFiles/EjercicioOpcional3.dir
+/home/jonatan/GitIvan/Build/Tarea1/CMakeFiles/ejercicio2.dir
+/home/jonatan/GitIvan/Build/Tarea1/CMakeFiles/ejercicio4.dir
+/home/jonatan/GitIvan/Build/Tarea1/CMakeFiles/edit_cache.dir
+/home/jonatan/GitIvan/Build/Tarea1/CMakeFiles/rebuild_cache.dir
+/home/jonatan/GitIvan/Build/Tarea2/CMakeFiles/calculadora.dir
+/home/jonatan/GitIvan/Build/Tarea2/CMakeFiles/edit_cache.dir
+/home/jonatan/GitIvan/Build/Tarea2/CMakeFiles/rebuild_cache.dir

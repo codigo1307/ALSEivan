@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Parcial.dir/parcial.cpp.o -o Parcial 

@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
 
 # Set the project name
-project(Ejemplo4)
+project(Ejecutables)
 
-# Add the executable for ConttrolStructures.cpp
-add_executable(ArgExample calculadora.cpp)
+# Add subdirectories where the other CMakeLists.txt files are located
+add_subdirectory(Parcial)
+add_subdirectory(Tarea1)
+add_subdirectory(Tarea2)
