@@ -2,16 +2,6 @@
 Grupo: **Ivan Daniel Carpentier, Jonatan García Vásquez**
 ---------------------------------------------------------------------------------------------------------
 
-<style>
-    
-details summary {
-    font-size: 1.2em; /* Cambia el tamaño de la fuente del resumen */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el resumen */
-}
-details {
-    margin-bottom: 1em; /* Añade un margen inferior a cada desplegable */
-}
-</style>
 
 <details>
 <summary><strong>Tarea 1</strong></summary>
