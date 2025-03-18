@@ -36,3 +36,12 @@ Grupo: **Ivan Daniel Carpentier, Jonatan García Vásquez**
 - **Calculadora ->** [Tarea2/calculadora.cpp](./Tarea2/calculadora.cpp)
 
 </details>
+
+<hr>
+
+<details>
+<summary><strong>LeetCode</strong></summary>
+
+- **Two sum ->** [twoSum.cpp](./Leetcode/twoSum.cpp)
+
+</details>
