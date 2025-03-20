@@ -5,15 +5,35 @@ using namespace std;
 class Solution {
 public:
     string addStrings(string num1, string num2) {
-        
+        int i = num1.size() - 1;
+        int j = num2.size() - 1;
+        int carry = 0;
+        string res = "";
+        while (i >= 0 || j >= 0 || carry) {
+            long sum = 0;
+            if (i >= 0) {
+                sum += (num1[i] - '0');
+                i--;
+            }
+            if (j >= 0) {
+                sum += (num2[j] - '0');
+                j--;
+            }
+            sum += carry;
+            carry = sum / 10;
+            sum = sum % 10;
+            res = to_string(sum) + res;
+        }
+        return res;
     }
 };
 
 int main(int, char **)
 {
-    cout << "Hello\n";
     Solution mySol;
-    vector<int> myVec = {0, 1, 5, 2, 3, 4, 6, 8};
+    string num1 = "4205";
+    string num2 = "456";
+    cout << mySol.addStrings(num1, num2) << endl;
 
     return 0;
 }

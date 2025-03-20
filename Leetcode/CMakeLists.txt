@@ -9,3 +9,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Agregar el ejecutable
 add_executable(twoSum twoSum.cpp)
+
+# Agregar el ejecutable
+add_executable(addStrings addStrings.cpp)
