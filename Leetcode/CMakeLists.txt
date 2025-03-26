@@ -12,3 +12,6 @@ add_executable(twoSum twoSum.cpp)
 
 # Agregar el ejecutable
 add_executable(addStrings addStrings.cpp)
+
+# Agregar el ejecutable
+add_executable(validSudoku validSudoku.cpp)
