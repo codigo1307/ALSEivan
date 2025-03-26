@@ -43,5 +43,7 @@ Grupo: **Ivan Daniel Carpentier, Jonatan García Vásquez**
 <summary><strong>LeetCode</strong></summary>
 
 - **Two sum ->** [twoSum.cpp](./Leetcode/twoSum.cpp)
+- **Add Strings ->** [addStrings.cpp](./Leetcode/addStrings.cpp)
+- **Valid Sudoku ->** [validSudoku.cpp](./Leetcode/validSudoku.cpp)
 
 </details>
