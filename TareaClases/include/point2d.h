@@ -46,7 +46,7 @@ public:
 
 
     // Virtual method for displaying info
-    void display(string name = "");
+    void display(string name);
 };
 
 #endif // VEHICLE_H

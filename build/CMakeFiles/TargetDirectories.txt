@@ -17,3 +17,6 @@
 /home/ivan/ALSEivan/build/Leetcode/CMakeFiles/validSudoku.dir
 /home/ivan/ALSEivan/build/Leetcode/CMakeFiles/edit_cache.dir
 /home/ivan/ALSEivan/build/Leetcode/CMakeFiles/rebuild_cache.dir
+/home/ivan/ALSEivan/build/TareaClases/CMakeFiles/point2d.dir
+/home/ivan/ALSEivan/build/TareaClases/CMakeFiles/edit_cache.dir
+/home/ivan/ALSEivan/build/TareaClases/CMakeFiles/rebuild_cache.dir

@@ -233,6 +233,19 @@ validSudoku/fast:
 	$(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/validSudoku.dir/build.make Leetcode/CMakeFiles/validSudoku.dir/build
 .PHONY : validSudoku/fast
 
+#=============================================================================
+# Target rules for targets named point2d
+
+# Build rule for target.
+point2d: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 point2d
+.PHONY : point2d
+
+# fast build rule for target.
+point2d/fast:
+	$(MAKE) $(MAKESILENT) -f TareaClases/CMakeFiles/point2d.dir/build.make TareaClases/CMakeFiles/point2d.dir/build
+.PHONY : point2d/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -248,6 +261,7 @@ help:
 	@echo "... calculadora"
 	@echo "... ejercicio2"
 	@echo "... ejercicio4"
+	@echo "... point2d"
 	@echo "... twoSum"
 	@echo "... validSudoku"
 .PHONY : help
