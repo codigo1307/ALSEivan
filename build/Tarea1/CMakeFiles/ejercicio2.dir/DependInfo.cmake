@@ -8,15 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/jonatan/GitIvan/Tarea1/ejercicio2.2.cpp" "Tarea1/CMakeFiles/ejercicio2.dir/ejercicio2.2.cpp.o" "gcc" "Tarea1/CMakeFiles/ejercicio2.dir/ejercicio2.2.cpp.o.d"
+  "/home/ivan/ALSEivan/Tarea1/ejercicio2.2.cpp" "Tarea1/CMakeFiles/ejercicio2.dir/ejercicio2.2.cpp.o" "gcc" "Tarea1/CMakeFiles/ejercicio2.dir/ejercicio2.2.cpp.o.d"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
-  )
-
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

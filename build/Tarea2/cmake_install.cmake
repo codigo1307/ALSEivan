@@ -1,4 +1,4 @@
-# Install script for directory: /home/jonatan/GitIvan/Tarea2
+# Install script for directory: /home/ivan/ALSEivan/Tarea2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
