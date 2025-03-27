@@ -1,4 +1,4 @@
-# Install script for directory: /home/ivan/ALSEivan/Parcial
+# Install script for directory: /home/jonatan/GitIvan/Parcial
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

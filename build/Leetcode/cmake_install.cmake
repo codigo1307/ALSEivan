@@ -1,4 +1,4 @@
-# Install script for directory: /home/ivan/ALSEivan/Leetcode
+# Install script for directory: /home/jonatan/GitIvan/Leetcode
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,4 +1,4 @@
-# Install script for directory: /home/ivan/ALSEivan
+# Install script for directory: /home/jonatan/GitIvan
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,11 +44,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ivan/ALSEivan/build/Parcial/cmake_install.cmake")
-  include("/home/ivan/ALSEivan/build/Tarea1/cmake_install.cmake")
-  include("/home/ivan/ALSEivan/build/Tarea2/cmake_install.cmake")
-  include("/home/ivan/ALSEivan/build/Leetcode/cmake_install.cmake")
-  include("/home/ivan/ALSEivan/build/TareaClases/cmake_install.cmake")
+  include("/home/jonatan/GitIvan/build/Parcial/cmake_install.cmake")
+  include("/home/jonatan/GitIvan/build/Tarea1/cmake_install.cmake")
+  include("/home/jonatan/GitIvan/build/Tarea2/cmake_install.cmake")
+  include("/home/jonatan/GitIvan/build/Leetcode/cmake_install.cmake")
+  include("/home/jonatan/GitIvan/build/TareaClases/cmake_install.cmake")
 
 endif()
 
@@ -60,5 +60,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ivan/ALSEivan/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jonatan/GitIvan/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
