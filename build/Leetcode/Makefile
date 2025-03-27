@@ -144,6 +144,20 @@ addStrings/fast:
 	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/addStrings.dir/build.make Leetcode/CMakeFiles/addStrings.dir/build
 .PHONY : addStrings/fast
 
+# Convenience name for target.
+Leetcode/CMakeFiles/validSudoku.dir/rule:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Leetcode/CMakeFiles/validSudoku.dir/rule
+.PHONY : Leetcode/CMakeFiles/validSudoku.dir/rule
+
+# Convenience name for target.
+validSudoku: Leetcode/CMakeFiles/validSudoku.dir/rule
+.PHONY : validSudoku
+
+# fast build rule for target.
+validSudoku/fast:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/validSudoku.dir/build.make Leetcode/CMakeFiles/validSudoku.dir/build
+.PHONY : validSudoku/fast
+
 addStrings.o: addStrings.cpp.o
 .PHONY : addStrings.o
 
@@ -192,6 +206,30 @@ twoSum.cpp.s:
 	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/twoSum.dir/build.make Leetcode/CMakeFiles/twoSum.dir/twoSum.cpp.s
 .PHONY : twoSum.cpp.s
 
+validSudoku.o: validSudoku.cpp.o
+.PHONY : validSudoku.o
+
+# target to build an object file
+validSudoku.cpp.o:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/validSudoku.dir/build.make Leetcode/CMakeFiles/validSudoku.dir/validSudoku.cpp.o
+.PHONY : validSudoku.cpp.o
+
+validSudoku.i: validSudoku.cpp.i
+.PHONY : validSudoku.i
+
+# target to preprocess a source file
+validSudoku.cpp.i:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/validSudoku.dir/build.make Leetcode/CMakeFiles/validSudoku.dir/validSudoku.cpp.i
+.PHONY : validSudoku.cpp.i
+
+validSudoku.s: validSudoku.cpp.s
+.PHONY : validSudoku.s
+
+# target to generate assembly for a file
+validSudoku.cpp.s:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/validSudoku.dir/build.make Leetcode/CMakeFiles/validSudoku.dir/validSudoku.cpp.s
+.PHONY : validSudoku.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -202,12 +240,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... addStrings"
 	@echo "... twoSum"
+	@echo "... validSudoku"
 	@echo "... addStrings.o"
 	@echo "... addStrings.i"
 	@echo "... addStrings.s"
 	@echo "... twoSum.o"
 	@echo "... twoSum.i"
 	@echo "... twoSum.s"
+	@echo "... validSudoku.o"
+	@echo "... validSudoku.i"
+	@echo "... validSudoku.s"
 .PHONY : help
 
 

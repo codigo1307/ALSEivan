@@ -14,5 +14,6 @@
 /home/jonatan/GitIvan/build/Tarea2/CMakeFiles/rebuild_cache.dir
 /home/jonatan/GitIvan/build/Leetcode/CMakeFiles/twoSum.dir
 /home/jonatan/GitIvan/build/Leetcode/CMakeFiles/addStrings.dir
+/home/jonatan/GitIvan/build/Leetcode/CMakeFiles/validSudoku.dir
 /home/jonatan/GitIvan/build/Leetcode/CMakeFiles/edit_cache.dir
 /home/jonatan/GitIvan/build/Leetcode/CMakeFiles/rebuild_cache.dir

@@ -89,6 +89,7 @@ clean: Leetcode/clean
 # Recursive "all" directory target.
 Leetcode/all: Leetcode/CMakeFiles/twoSum.dir/all
 Leetcode/all: Leetcode/CMakeFiles/addStrings.dir/all
+Leetcode/all: Leetcode/CMakeFiles/validSudoku.dir/all
 .PHONY : Leetcode/all
 
 # Recursive "preinstall" directory target.
@@ -98,6 +99,7 @@ Leetcode/preinstall:
 # Recursive "clean" directory target.
 Leetcode/clean: Leetcode/CMakeFiles/twoSum.dir/clean
 Leetcode/clean: Leetcode/CMakeFiles/addStrings.dir/clean
+Leetcode/clean: Leetcode/CMakeFiles/validSudoku.dir/clean
 .PHONY : Leetcode/clean
 
 #=============================================================================
@@ -358,6 +360,32 @@ addStrings: Leetcode/CMakeFiles/addStrings.dir/rule
 Leetcode/CMakeFiles/addStrings.dir/clean:
 	$(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/addStrings.dir/build.make Leetcode/CMakeFiles/addStrings.dir/clean
 .PHONY : Leetcode/CMakeFiles/addStrings.dir/clean
+
+#=============================================================================
+# Target rules for target Leetcode/CMakeFiles/validSudoku.dir
+
+# All Build rule for target.
+Leetcode/CMakeFiles/validSudoku.dir/all:
+	$(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/validSudoku.dir/build.make Leetcode/CMakeFiles/validSudoku.dir/depend
+	$(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/validSudoku.dir/build.make Leetcode/CMakeFiles/validSudoku.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jonatan/GitIvan/build/CMakeFiles --progress-num=17,18 "Built target validSudoku"
+.PHONY : Leetcode/CMakeFiles/validSudoku.dir/all
+
+# Build rule for subdir invocation for target.
+Leetcode/CMakeFiles/validSudoku.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jonatan/GitIvan/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Leetcode/CMakeFiles/validSudoku.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jonatan/GitIvan/build/CMakeFiles 0
+.PHONY : Leetcode/CMakeFiles/validSudoku.dir/rule
+
+# Convenience name for target.
+validSudoku: Leetcode/CMakeFiles/validSudoku.dir/rule
+.PHONY : validSudoku
+
+# clean rule for target.
+Leetcode/CMakeFiles/validSudoku.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/validSudoku.dir/build.make Leetcode/CMakeFiles/validSudoku.dir/clean
+.PHONY : Leetcode/CMakeFiles/validSudoku.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -220,6 +220,19 @@ addStrings/fast:
 	$(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/addStrings.dir/build.make Leetcode/CMakeFiles/addStrings.dir/build
 .PHONY : addStrings/fast
 
+#=============================================================================
+# Target rules for targets named validSudoku
+
+# Build rule for target.
+validSudoku: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 validSudoku
+.PHONY : validSudoku
+
+# fast build rule for target.
+validSudoku/fast:
+	$(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/validSudoku.dir/build.make Leetcode/CMakeFiles/validSudoku.dir/build
+.PHONY : validSudoku/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -236,6 +249,7 @@ help:
 	@echo "... ejercicio2"
 	@echo "... ejercicio4"
 	@echo "... twoSum"
+	@echo "... validSudoku"
 .PHONY : help
 
 
