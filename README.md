@@ -47,3 +47,14 @@ Grupo: **Ivan Daniel Carpentier, Jonatan García Vásquez**
 - **Valid Sudoku ->** [validSudoku.cpp](./Leetcode/validSudoku.cpp)
 
 </details>
+
+<hr>
+
+<details>
+<summary><strong>TareaClases</strong></summary>
+
+- **Definición de la clase->** [point2d.h](./TareaClases/include/point2d.h)
+- **Implementación de la clase ->** [point2d.cpp](./TareaClases/src/point2d.cpp)
+- **Archivo main ->** [point2d.cpp](./TareaClases/point2d.cpp)
+
+</details>
