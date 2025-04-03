@@ -234,6 +234,19 @@ validSudoku/fast:
 .PHONY : validSudoku/fast
 
 #=============================================================================
+# Target rules for targets named designParking
+
+# Build rule for target.
+designParking: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 designParking
+.PHONY : designParking
+
+# fast build rule for target.
+designParking/fast:
+	$(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/designParking.dir/build.make Leetcode/CMakeFiles/designParking.dir/build
+.PHONY : designParking/fast
+
+#=============================================================================
 # Target rules for targets named point2d
 
 # Build rule for target.
@@ -259,6 +272,7 @@ help:
 	@echo "... Parcial"
 	@echo "... addStrings"
 	@echo "... calculadora"
+	@echo "... designParking"
 	@echo "... ejercicio2"
 	@echo "... ejercicio4"
 	@echo "... point2d"

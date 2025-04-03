@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <optional>
 #include <string>
 using namespace std;
 
@@ -87,32 +86,26 @@ int main() {
     ParkingSystem myParkingSystem(0, 0, 0); // Crear una instancia de ParkingSystem con espacios iniciales en 0
     vector<string> input = myParkingSystem.inputVector(); // Leer las operaciones desde la entrada
     vector<vector<int>> inputInt = myParkingSystem.inputVectorInt(); // Leer los parámetros de las operaciones
-    vector<optional<bool>> output; // Vector para almacenar los resultados de las operaciones
+    vector<string> output; // Vector para almacenar los resultados de las operaciones
 
     // Procesar las entradas
     for (int i = 0; i < input.size(); i++) {
         if (input[i] == "ParkingSystem") {
             // Configurar los espacios de aparcamiento
             myParkingSystem.SetParkingSpaces(inputInt[i][0], inputInt[i][1], inputInt[i][2]);
-            output.push_back(nullopt); // Representar "null" como nullopt
+            output.push_back("null"); // Representar "null" como nullopt
         } else if (input[i] == "addCar") {
             // Añadir un coche al aparcamiento
             int carType = inputInt[i][0]; // Obtener el tipo de coche
             bool result = myParkingSystem.addCar(carType); // Intentar aparcar el coche
-            output.push_back(result); // Agregar true o false al resultado
+            output.push_back(result ? "true" : "false"); // Agregar true o false al resultado
         }
     }
 
     // Mostrar el resultado
     cout << "[";
     for (size_t i = 0; i < output.size(); i++) {
-        if (output[i].has_value()) {
-            // Mostrar true o false si el valor está presente
-            cout << (output[i].value() ? "true" : "false");
-        } else {
-            // Mostrar null si no hay valor
-            cout << "null";
-        }
+        cout << output[i]; // Mostrar el resultado como cadena
         if (i < output.size() - 1) {
             cout << ", "; // Separar los valores con comas
         }

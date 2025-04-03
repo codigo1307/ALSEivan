@@ -158,6 +158,44 @@ validSudoku/fast:
 	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/validSudoku.dir/build.make Leetcode/CMakeFiles/validSudoku.dir/build
 .PHONY : validSudoku/fast
 
+# Convenience name for target.
+Leetcode/CMakeFiles/designParking.dir/rule:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Leetcode/CMakeFiles/designParking.dir/rule
+.PHONY : Leetcode/CMakeFiles/designParking.dir/rule
+
+# Convenience name for target.
+designParking: Leetcode/CMakeFiles/designParking.dir/rule
+.PHONY : designParking
+
+# fast build rule for target.
+designParking/fast:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/designParking.dir/build.make Leetcode/CMakeFiles/designParking.dir/build
+.PHONY : designParking/fast
+
+DesignParking.o: DesignParking.cpp.o
+.PHONY : DesignParking.o
+
+# target to build an object file
+DesignParking.cpp.o:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/designParking.dir/build.make Leetcode/CMakeFiles/designParking.dir/DesignParking.cpp.o
+.PHONY : DesignParking.cpp.o
+
+DesignParking.i: DesignParking.cpp.i
+.PHONY : DesignParking.i
+
+# target to preprocess a source file
+DesignParking.cpp.i:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/designParking.dir/build.make Leetcode/CMakeFiles/designParking.dir/DesignParking.cpp.i
+.PHONY : DesignParking.cpp.i
+
+DesignParking.s: DesignParking.cpp.s
+.PHONY : DesignParking.s
+
+# target to generate assembly for a file
+DesignParking.cpp.s:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/designParking.dir/build.make Leetcode/CMakeFiles/designParking.dir/DesignParking.cpp.s
+.PHONY : DesignParking.cpp.s
+
 addStrings.o: addStrings.cpp.o
 .PHONY : addStrings.o
 
@@ -239,8 +277,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... addStrings"
+	@echo "... designParking"
 	@echo "... twoSum"
 	@echo "... validSudoku"
+	@echo "... DesignParking.o"
+	@echo "... DesignParking.i"
+	@echo "... DesignParking.s"
 	@echo "... addStrings.o"
 	@echo "... addStrings.i"
 	@echo "... addStrings.s"
