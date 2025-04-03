@@ -17,4 +17,4 @@ add_executable(addStrings addStrings.cpp)
 add_executable(validSudoku validSudoku.cpp)
 
 # Agregar el ejecutable
-add_executable(designParking DesignParking.cpp)
+add_executable(designParking designParking.cpp)
