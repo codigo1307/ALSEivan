@@ -20,8 +20,8 @@ public:
     // Métodos Getter y Setter para acceder a el numero de cuenta y el saldo
     float obtenerSaldo() const; // Devuelve lo que queda en el saldo
     string getNumeroCuenta() const; // Devuelve el numero de cuenta
-    void setNumeroCuenta(string numeroCuenta); // Establece el numero de cuenta
-    void getCuentaBloqueada(); // Devuelve si la cuenta esta bloqueada o no
+    void setNumeroCuenta(string n); // Establece el numero de cuenta
+    bool getCuentaBloqueada(); // Devuelve si la cuenta esta bloqueada o no
 
     // Metodos adicionales
     void depositar(float cantidad); // Depositar una cantidad al saldo
@@ -33,7 +33,7 @@ public:
     friend ostream& operator<<(ostream&, const CuentaBancaria&); // Imprimir un punto en un flujo de salida
 
     // Método para mostrar información del punto
-    void display(string name); // Mostrar las coordenadas del punto con un nombre
+    void display(); // Mostrar las coordenadas del punto con un nombre
     
 };
 
