@@ -22,9 +22,18 @@ Grupo: **Ivan Daniel Carpentier, Jonatan García Vásquez**
 <hr>
 
 <details>
-<summary><strong>Parcial Ivan Daniel Carpentier Rodriguez</strong></summary>
+<summary><strong>Parcial 1 Ivan Daniel Carpentier Rodriguez</strong></summary>
 
-- **parcial ->** [Parcial/parcial.cpp](./Parcial/parcial.cpp)
+- **parcial 1 ->** [Parcial/parcial.cpp](./Parcial/parcial.cpp)
+
+</details>
+
+<hr>
+
+<details>
+<summary><strong>Parcial 2 Ivan Daniel Carpentier Rodriguez y Jonatan García</strong></summary>
+
+- **parcial 1 ->** [Parcial2/parcial.cpp](./Parcial2/)
 
 </details>
 
