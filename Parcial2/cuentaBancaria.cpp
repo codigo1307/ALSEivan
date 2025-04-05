@@ -24,15 +24,9 @@ int main() {
     // Simule registro de consumo para cada medidor
     for (int i = 0; i < cuentas.size(); i++) {
         archivoSalida << "----------------------------------------" << endl;
-        archivoSalida << cuentas[i];
+        archivoSalida << cuentas[i] << endl; // Imprimir la cuenta
         float consumo = 1000.0 * (i + 1); // Simulación de consumo
-        if (!cuentas[i].retirar(consumo, archivoSalida)) { // Intentar retirar el consumo
-            archivoSalida << "No se pudo retirar el consumo de " << consumo << cuentas[i].getNumeroCuenta() << endl;
-            archivoSalida << "Bloqueando cuenta..." << endl;
-            cuentas[i].bloquearCuenta(archivoSalida); // Bloquear la cuenta si no hay suficiente saldo
-        } else {
-            archivoSalida << "Se retiraron " << consumo << endl;
-        }; // Retirar el consumo del saldo
+        cuentas[i].retirar(consumo, archivoSalida); // Retirar el consumo
         archivoSalida << "Saldo restante: " << cuentas[i].obtenerSaldo() << endl;
     }
     //

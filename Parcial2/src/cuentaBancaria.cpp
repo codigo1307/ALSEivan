@@ -55,7 +55,9 @@ bool CuentaBancaria::retirar(float cantidad, ostream& os) {
         os << "La cuenta esta bloqueada, no se puede retirar." << endl; // Mensaje de error si la cuenta está bloqueada
         return false; // No se puede retirar
     } else if (cantidad > saldo) {
-        os << "No hay suficiente saldo para retirar." << endl; // Mensaje de error si no hay suficiente saldo
+        os << "No hay suficiente saldo para retirar " << cantidad << endl; // Mensaje de error si no hay suficiente saldo
+        os << "bloqueando cuenta..." << endl; // Mensaje de bloqueo
+        bloquearCuenta(os); // Bloquear la cuenta
         return false; // No se puede retirar
     }
     os << "Retirando " << cantidad << " de la cuenta." << endl; // Mensaje de éxito
