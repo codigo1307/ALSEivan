@@ -65,27 +65,31 @@ public:
     /**
      * @brief Deposita una cantidad en la cuenta.
      * @param cantidad Cantidad a depositar.
+     * @param os Flujo de salida.
      */
-    void depositar(float cantidad);
+    void depositar(float cantidad, ostream& os);
 
     /**
      * @brief Retira una cantidad del saldo de la cuenta.
      * @param cantidad Cantidad a retirar.
+     * @param os Flujo de salida.
      * @return `true` si la operación fue exitosa, `false` si no hay suficiente saldo o la cuenta está bloqueada.
      */
-    bool retirar(float cantidad);
+    bool retirar(float cantidad, ostream& os);
 
     /**
      * @brief Bloquea la cuenta bancaria.
+     * @param os Flujo de salida.
      * @return `true` si la operación fue exitosa, `false` si la cuenta ya estaba bloqueada.
      */
-    bool bloquearCuenta();
+    bool bloquearCuenta(ostream& os);
 
     /**
      * @brief Desbloquea la cuenta bancaria.
+     * @param os Flujo de salida.
      * @return `true` si la operación fue exitosa, `false` si la cuenta ya estaba desbloqueada.
      */
-    bool desbloquearCuenta();
+    bool desbloquearCuenta(ostream& os);
 
     /**
      * @brief Sobrecarga del operador de inserción en el flujo de salida.
@@ -97,8 +101,9 @@ public:
 
     /**
      * @brief Muestra la información de la cuenta bancaria.
+     * @param os Flujo de salida.
      */
-    void display();
+    void display(ostream& os);
 };
 
 #endif // CUENTABANCARIA_H

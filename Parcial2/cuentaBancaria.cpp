@@ -8,7 +8,7 @@ using namespace std; // Usar el espacio de nombres estándar
 
 int main() {
 
-    vector<CuentaBancaria> medidores;
+    vector<CuentaBancaria> cuentas;
 
     ofstream archivoSalida("../../Parcial2/salidas/reporte.txt"); // Abrir el archivo de salida
     if (!archivoSalida.is_open()) {
@@ -17,23 +17,23 @@ int main() {
     }
 
     // Agregue 3 objetos al vector con valores iniciales
-    medidores.push_back(CuentaBancaria(1000.0, "12345"));
-    medidores.push_back(CuentaBancaria(1500.0, "67890"));
-    medidores.push_back(CuentaBancaria(5000.0, "54321"));
+    cuentas.push_back(CuentaBancaria(1000.0, "12345"));
+    cuentas.push_back(CuentaBancaria(1500.0, "67890"));
+    cuentas.push_back(CuentaBancaria(5000.0, "54321"));
 
     // Simule registro de consumo para cada medidor
-    for (int i = 0; i < medidores.size(); i++) {
+    for (int i = 0; i < cuentas.size(); i++) {
         archivoSalida << "----------------------------------------" << endl;
-        archivoSalida << "Cuenta bancaria numero " << medidores[i].getNumeroCuenta() << ": ";
+        archivoSalida << cuentas[i];
         float consumo = 1000.0 * (i + 1); // Simulación de consumo
-        if (!medidores[i].retirar(consumo)){
-            archivoSalida << "No se pudo retirar el consumo de " << consumo << medidores[i].getNumeroCuenta() << endl;
+        if (!cuentas[i].retirar(consumo, archivoSalida)) { // Intentar retirar el consumo
+            archivoSalida << "No se pudo retirar el consumo de " << consumo << cuentas[i].getNumeroCuenta() << endl;
             archivoSalida << "Bloqueando cuenta..." << endl;
-            medidores[i].bloquearCuenta(); // Bloquear la cuenta si no hay suficiente saldo
+            cuentas[i].bloquearCuenta(archivoSalida); // Bloquear la cuenta si no hay suficiente saldo
         } else {
             archivoSalida << "Se retiraron " << consumo << endl;
         }; // Retirar el consumo del saldo
-        archivoSalida << "Saldo restante: " << medidores[i].obtenerSaldo() << endl;
+        archivoSalida << "Saldo restante: " << cuentas[i].obtenerSaldo() << endl;
     }
     //
     archivoSalida.close(); // Cerrar el archivo de salida

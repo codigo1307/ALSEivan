@@ -1,0 +1,10 @@
+----------------------------------------
+Cuenta bancaria numero 12345: Se retiraron 1000
+Saldo restante: 0
+----------------------------------------
+Cuenta bancaria numero 67890: No se pudo retirar el consumo de 200067890
+Bloqueando cuenta...
+Saldo restante: 1500
+----------------------------------------
+Cuenta bancaria numero 54321: Se retiraron 3000
+Saldo restante: 2000
