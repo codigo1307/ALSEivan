@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Parcial2: Archivo de código fuente include/cuentaBancaria.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Parcial2<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Documentación del proyecto Parcial2</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">cuentaBancaria.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="cuentaBancaria_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CUENTABANCARIA_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CUENTABANCARIA_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classCuentaBancaria.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="classCuentaBancaria.html">CuentaBancaria</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classCuentaBancaria.html#a53a4449c3e56db9ee077203107fc4444">   16</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="classCuentaBancaria.html#a53a4449c3e56db9ee077203107fc4444">saldo</a>;  </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classCuentaBancaria.html#ad782cc8a5e4857f365295149cdd99eab">   17</a></span>    <span class="keywordtype">string</span> <a class="code hl_variable" href="classCuentaBancaria.html#ad782cc8a5e4857f365295149cdd99eab">numeroCuenta</a>;  </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classCuentaBancaria.html#a001717941bee59c454a0c238eceba322">   18</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="classCuentaBancaria.html#a001717941bee59c454a0c238eceba322">cuentaBloqueada</a>; </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classCuentaBancaria.html#ad97c63cb1ea02a0f3f11be945ff4ff87">   25</a></span>    <a class="code hl_function" href="classCuentaBancaria.html#ad97c63cb1ea02a0f3f11be945ff4ff87">CuentaBancaria</a>(<span class="keywordtype">void</span>); </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classCuentaBancaria.html#a5adc97a9dbc97c062cb290ec1e39ad5b">   32</a></span>    <a class="code hl_function" href="classCuentaBancaria.html#a5adc97a9dbc97c062cb290ec1e39ad5b">CuentaBancaria</a>(<span class="keywordtype">float</span> s, <span class="keywordtype">string</span> n);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classCuentaBancaria.html#adad692f20e9f536701dd1c52f81f6194">   40</a></span>    <a class="code hl_function" href="classCuentaBancaria.html#adad692f20e9f536701dd1c52f81f6194">CuentaBancaria</a>(<span class="keyword">const</span> <a class="code hl_class" href="classCuentaBancaria.html">CuentaBancaria</a>&amp; c);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classCuentaBancaria.html#a43dc103a1f7ae82bba3d42105f0e4eca">   46</a></span>    <span class="keywordtype">float</span> <a class="code hl_function" href="classCuentaBancaria.html#a43dc103a1f7ae82bba3d42105f0e4eca">obtenerSaldo</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classCuentaBancaria.html#a972559024a493b45c7d5fb6bd7424c7b">   51</a></span>    <span class="keywordtype">string</span> <a class="code hl_function" href="classCuentaBancaria.html#a972559024a493b45c7d5fb6bd7424c7b">getNumeroCuenta</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classCuentaBancaria.html#a4bf500d4e7d9150da5b9e688310a41f8">   57</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classCuentaBancaria.html#a4bf500d4e7d9150da5b9e688310a41f8">setNumeroCuenta</a>(<span class="keywordtype">string</span> n);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classCuentaBancaria.html#aab5348b9a2b041900da68b38dd65e138">   63</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCuentaBancaria.html#aab5348b9a2b041900da68b38dd65e138">getCuentaBloqueada</a>();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classCuentaBancaria.html#a84166fbef56694a5ccba06ebdc8aa5e3">   70</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classCuentaBancaria.html#a84166fbef56694a5ccba06ebdc8aa5e3">depositar</a>(<span class="keywordtype">float</span> cantidad, ostream&amp; os);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classCuentaBancaria.html#af67cfde237f4b39b5bb9765d2514fd32">   78</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCuentaBancaria.html#af67cfde237f4b39b5bb9765d2514fd32">retirar</a>(<span class="keywordtype">float</span> cantidad, ostream&amp; os);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="classCuentaBancaria.html#add8438afda34c1e407db3fc6da6ca8fb">   85</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCuentaBancaria.html#add8438afda34c1e407db3fc6da6ca8fb">bloquearCuenta</a>(ostream&amp; os);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classCuentaBancaria.html#a2824fcf166fbec842f5d072b79b9a17a">   92</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classCuentaBancaria.html#a2824fcf166fbec842f5d072b79b9a17a">desbloquearCuenta</a>(ostream&amp; os);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classCuentaBancaria.html#a3e7a600189474a69a5df5ff98f11bf25">  100</a></span>    <span class="keyword">friend</span> ostream&amp; <a class="code hl_friend" href="classCuentaBancaria.html#a3e7a600189474a69a5df5ff98f11bf25">operator&lt;&lt;</a>(ostream&amp; os, <span class="keyword">const</span> <a class="code hl_class" href="classCuentaBancaria.html">CuentaBancaria</a>&amp; cuenta);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classCuentaBancaria.html#a8f74143682be5ddf2dc0fc2fb3e6a805">  106</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classCuentaBancaria.html#a8f74143682be5ddf2dc0fc2fb3e6a805">display</a>(ostream&amp; os);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>};</div>
+</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">#endif </span><span class="comment">// CUENTABANCARIA_H</span></div>
+<div class="ttc" id="aclassCuentaBancaria_html"><div class="ttname"><a href="classCuentaBancaria.html">CuentaBancaria</a></div><div class="ttdoc">Clase CuentaBancaria.</div><div class="ttdef"><b>Definition</b> <a href="cuentaBancaria_8h_source.html#l00014">cuentaBancaria.h:14</a></div></div>
+<div class="ttc" id="aclassCuentaBancaria_html_a001717941bee59c454a0c238eceba322"><div class="ttname"><a href="classCuentaBancaria.html#a001717941bee59c454a0c238eceba322">CuentaBancaria::cuentaBloqueada</a></div><div class="ttdeci">bool cuentaBloqueada</div><div class="ttdoc">Indica si la cuenta está bloqueada (privado).</div><div class="ttdef"><b>Definition</b> <a href="cuentaBancaria_8h_source.html#l00018">cuentaBancaria.h:18</a></div></div>
+<div class="ttc" id="aclassCuentaBancaria_html_a2824fcf166fbec842f5d072b79b9a17a"><div class="ttname"><a href="classCuentaBancaria.html#a2824fcf166fbec842f5d072b79b9a17a">CuentaBancaria::desbloquearCuenta</a></div><div class="ttdeci">bool desbloquearCuenta(ostream &amp;os)</div><div class="ttdoc">Desbloquea la cuenta bancaria.</div></div>
+<div class="ttc" id="aclassCuentaBancaria_html_a3e7a600189474a69a5df5ff98f11bf25"><div class="ttname"><a href="classCuentaBancaria.html#a3e7a600189474a69a5df5ff98f11bf25">CuentaBancaria::operator&lt;&lt;</a></div><div class="ttdeci">friend ostream &amp; operator&lt;&lt;(ostream &amp;os, const CuentaBancaria &amp;cuenta)</div><div class="ttdoc">Sobrecarga del operador de inserción en el flujo de salida.</div></div>
+<div class="ttc" id="aclassCuentaBancaria_html_a43dc103a1f7ae82bba3d42105f0e4eca"><div class="ttname"><a href="classCuentaBancaria.html#a43dc103a1f7ae82bba3d42105f0e4eca">CuentaBancaria::obtenerSaldo</a></div><div class="ttdeci">float obtenerSaldo() const</div><div class="ttdoc">obtiene el saldo de la cuenta.</div></div>
+<div class="ttc" id="aclassCuentaBancaria_html_a4bf500d4e7d9150da5b9e688310a41f8"><div class="ttname"><a href="classCuentaBancaria.html#a4bf500d4e7d9150da5b9e688310a41f8">CuentaBancaria::setNumeroCuenta</a></div><div class="ttdeci">void setNumeroCuenta(string n)</div><div class="ttdoc">Establece el número de cuenta.</div></div>
+<div class="ttc" id="aclassCuentaBancaria_html_a53a4449c3e56db9ee077203107fc4444"><div class="ttname"><a href="classCuentaBancaria.html#a53a4449c3e56db9ee077203107fc4444">CuentaBancaria::saldo</a></div><div class="ttdeci">float saldo</div><div class="ttdoc">Saldo de la cuenta (privado).</div><div class="ttdef"><b>Definition</b> <a href="cuentaBancaria_8h_source.html#l00016">cuentaBancaria.h:16</a></div></div>
+<div class="ttc" id="aclassCuentaBancaria_html_a5adc97a9dbc97c062cb290ec1e39ad5b"><div class="ttname"><a href="classCuentaBancaria.html#a5adc97a9dbc97c062cb290ec1e39ad5b">CuentaBancaria::CuentaBancaria</a></div><div class="ttdeci">CuentaBancaria(float s, string n)</div><div class="ttdoc">Constructor con parametros.</div></div>
+<div class="ttc" id="aclassCuentaBancaria_html_a84166fbef56694a5ccba06ebdc8aa5e3"><div class="ttname"><a href="classCuentaBancaria.html#a84166fbef56694a5ccba06ebdc8aa5e3">CuentaBancaria::depositar</a></div><div class="ttdeci">void depositar(float cantidad, ostream &amp;os)</div><div class="ttdoc">Deposita una cantidad en la cuenta.</div></div>
+<div class="ttc" id="aclassCuentaBancaria_html_a8f74143682be5ddf2dc0fc2fb3e6a805"><div class="ttname"><a href="classCuentaBancaria.html#a8f74143682be5ddf2dc0fc2fb3e6a805">CuentaBancaria::display</a></div><div class="ttdeci">void display(ostream &amp;os)</div><div class="ttdoc">Muestra la información de la cuenta bancaria.</div></div>
+<div class="ttc" id="aclassCuentaBancaria_html_a972559024a493b45c7d5fb6bd7424c7b"><div class="ttname"><a href="classCuentaBancaria.html#a972559024a493b45c7d5fb6bd7424c7b">CuentaBancaria::getNumeroCuenta</a></div><div class="ttdeci">string getNumeroCuenta() const</div><div class="ttdoc">obtiene el numero de cuenta.</div></div>
+<div class="ttc" id="aclassCuentaBancaria_html_aab5348b9a2b041900da68b38dd65e138"><div class="ttname"><a href="classCuentaBancaria.html#aab5348b9a2b041900da68b38dd65e138">CuentaBancaria::getCuentaBloqueada</a></div><div class="ttdeci">bool getCuentaBloqueada()</div><div class="ttdoc">Verifica si la cuenta está bloqueada.</div></div>
+<div class="ttc" id="aclassCuentaBancaria_html_ad782cc8a5e4857f365295149cdd99eab"><div class="ttname"><a href="classCuentaBancaria.html#ad782cc8a5e4857f365295149cdd99eab">CuentaBancaria::numeroCuenta</a></div><div class="ttdeci">string numeroCuenta</div><div class="ttdoc">Número de cuenta (privado).</div><div class="ttdef"><b>Definition</b> <a href="cuentaBancaria_8h_source.html#l00017">cuentaBancaria.h:17</a></div></div>
+<div class="ttc" id="aclassCuentaBancaria_html_ad97c63cb1ea02a0f3f11be945ff4ff87"><div class="ttname"><a href="classCuentaBancaria.html#ad97c63cb1ea02a0f3f11be945ff4ff87">CuentaBancaria::CuentaBancaria</a></div><div class="ttdeci">CuentaBancaria(void)</div><div class="ttdoc">Constructor por defecto. Inicializa el saldo en 0, y el numero de cuenta como vacio,...</div></div>
+<div class="ttc" id="aclassCuentaBancaria_html_adad692f20e9f536701dd1c52f81f6194"><div class="ttname"><a href="classCuentaBancaria.html#adad692f20e9f536701dd1c52f81f6194">CuentaBancaria::CuentaBancaria</a></div><div class="ttdeci">CuentaBancaria(const CuentaBancaria &amp;c)</div><div class="ttdoc">Consctructor de copia.</div></div>
+<div class="ttc" id="aclassCuentaBancaria_html_add8438afda34c1e407db3fc6da6ca8fb"><div class="ttname"><a href="classCuentaBancaria.html#add8438afda34c1e407db3fc6da6ca8fb">CuentaBancaria::bloquearCuenta</a></div><div class="ttdeci">bool bloquearCuenta(ostream &amp;os)</div><div class="ttdoc">Bloquea la cuenta bancaria.</div></div>
+<div class="ttc" id="aclassCuentaBancaria_html_af67cfde237f4b39b5bb9765d2514fd32"><div class="ttname"><a href="classCuentaBancaria.html#af67cfde237f4b39b5bb9765d2514fd32">CuentaBancaria::retirar</a></div><div class="ttdeci">bool retirar(float cantidad, ostream &amp;os)</div><div class="ttdoc">Retira una cantidad del saldo de la cuenta.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
