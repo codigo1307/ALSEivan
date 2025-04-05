@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/designParking.dir/DesignParking.cpp.o -o designParking 
+/usr/bin/c++ CMakeFiles/designParking.dir/designParking.cpp.o -o designParking 

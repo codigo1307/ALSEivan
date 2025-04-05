@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/designParking.dir/DesignParking.cpp.o"
-  "CMakeFiles/designParking.dir/DesignParking.cpp.o.d"
+  "CMakeFiles/designParking.dir/designParking.cpp.o"
+  "CMakeFiles/designParking.dir/designParking.cpp.o.d"
   "designParking"
   "designParking.pdb"
 )

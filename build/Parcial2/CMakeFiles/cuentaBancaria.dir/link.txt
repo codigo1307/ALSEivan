@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/cuentaBancaria.dir/cuentaBancaria.cpp.o -o cuentaBancaria 

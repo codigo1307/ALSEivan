@@ -259,6 +259,19 @@ point2d/fast:
 	$(MAKE) $(MAKESILENT) -f TareaClases/CMakeFiles/point2d.dir/build.make TareaClases/CMakeFiles/point2d.dir/build
 .PHONY : point2d/fast
 
+#=============================================================================
+# Target rules for targets named cuentaBancaria
+
+# Build rule for target.
+cuentaBancaria: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cuentaBancaria
+.PHONY : cuentaBancaria
+
+# fast build rule for target.
+cuentaBancaria/fast:
+	$(MAKE) $(MAKESILENT) -f Parcial2/CMakeFiles/cuentaBancaria.dir/build.make Parcial2/CMakeFiles/cuentaBancaria.dir/build
+.PHONY : cuentaBancaria/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -272,6 +285,7 @@ help:
 	@echo "... Parcial"
 	@echo "... addStrings"
 	@echo "... calculadora"
+	@echo "... cuentaBancaria"
 	@echo "... designParking"
 	@echo "... ejercicio2"
 	@echo "... ejercicio4"

@@ -172,30 +172,6 @@ designParking/fast:
 	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/designParking.dir/build.make Leetcode/CMakeFiles/designParking.dir/build
 .PHONY : designParking/fast
 
-DesignParking.o: DesignParking.cpp.o
-.PHONY : DesignParking.o
-
-# target to build an object file
-DesignParking.cpp.o:
-	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/designParking.dir/build.make Leetcode/CMakeFiles/designParking.dir/DesignParking.cpp.o
-.PHONY : DesignParking.cpp.o
-
-DesignParking.i: DesignParking.cpp.i
-.PHONY : DesignParking.i
-
-# target to preprocess a source file
-DesignParking.cpp.i:
-	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/designParking.dir/build.make Leetcode/CMakeFiles/designParking.dir/DesignParking.cpp.i
-.PHONY : DesignParking.cpp.i
-
-DesignParking.s: DesignParking.cpp.s
-.PHONY : DesignParking.s
-
-# target to generate assembly for a file
-DesignParking.cpp.s:
-	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/designParking.dir/build.make Leetcode/CMakeFiles/designParking.dir/DesignParking.cpp.s
-.PHONY : DesignParking.cpp.s
-
 addStrings.o: addStrings.cpp.o
 .PHONY : addStrings.o
 
@@ -219,6 +195,30 @@ addStrings.s: addStrings.cpp.s
 addStrings.cpp.s:
 	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/addStrings.dir/build.make Leetcode/CMakeFiles/addStrings.dir/addStrings.cpp.s
 .PHONY : addStrings.cpp.s
+
+designParking.o: designParking.cpp.o
+.PHONY : designParking.o
+
+# target to build an object file
+designParking.cpp.o:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/designParking.dir/build.make Leetcode/CMakeFiles/designParking.dir/designParking.cpp.o
+.PHONY : designParking.cpp.o
+
+designParking.i: designParking.cpp.i
+.PHONY : designParking.i
+
+# target to preprocess a source file
+designParking.cpp.i:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/designParking.dir/build.make Leetcode/CMakeFiles/designParking.dir/designParking.cpp.i
+.PHONY : designParking.cpp.i
+
+designParking.s: designParking.cpp.s
+.PHONY : designParking.s
+
+# target to generate assembly for a file
+designParking.cpp.s:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/designParking.dir/build.make Leetcode/CMakeFiles/designParking.dir/designParking.cpp.s
+.PHONY : designParking.cpp.s
 
 twoSum.o: twoSum.cpp.o
 .PHONY : twoSum.o
@@ -280,12 +280,12 @@ help:
 	@echo "... designParking"
 	@echo "... twoSum"
 	@echo "... validSudoku"
-	@echo "... DesignParking.o"
-	@echo "... DesignParking.i"
-	@echo "... DesignParking.s"
 	@echo "... addStrings.o"
 	@echo "... addStrings.i"
 	@echo "... addStrings.s"
+	@echo "... designParking.o"
+	@echo "... designParking.i"
+	@echo "... designParking.s"
 	@echo "... twoSum.o"
 	@echo "... twoSum.i"
 	@echo "... twoSum.s"

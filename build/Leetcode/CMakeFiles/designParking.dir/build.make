@@ -69,28 +69,28 @@ include Leetcode/CMakeFiles/designParking.dir/progress.make
 # Include the compile flags for this target's objects.
 include Leetcode/CMakeFiles/designParking.dir/flags.make
 
-Leetcode/CMakeFiles/designParking.dir/DesignParking.cpp.o: Leetcode/CMakeFiles/designParking.dir/flags.make
-Leetcode/CMakeFiles/designParking.dir/DesignParking.cpp.o: /home/jonatan/GitIvan/Leetcode/DesignParking.cpp
-Leetcode/CMakeFiles/designParking.dir/DesignParking.cpp.o: Leetcode/CMakeFiles/designParking.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jonatan/GitIvan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Leetcode/CMakeFiles/designParking.dir/DesignParking.cpp.o"
-	cd /home/jonatan/GitIvan/build/Leetcode && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Leetcode/CMakeFiles/designParking.dir/DesignParking.cpp.o -MF CMakeFiles/designParking.dir/DesignParking.cpp.o.d -o CMakeFiles/designParking.dir/DesignParking.cpp.o -c /home/jonatan/GitIvan/Leetcode/DesignParking.cpp
+Leetcode/CMakeFiles/designParking.dir/designParking.cpp.o: Leetcode/CMakeFiles/designParking.dir/flags.make
+Leetcode/CMakeFiles/designParking.dir/designParking.cpp.o: /home/jonatan/GitIvan/Leetcode/designParking.cpp
+Leetcode/CMakeFiles/designParking.dir/designParking.cpp.o: Leetcode/CMakeFiles/designParking.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jonatan/GitIvan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Leetcode/CMakeFiles/designParking.dir/designParking.cpp.o"
+	cd /home/jonatan/GitIvan/build/Leetcode && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Leetcode/CMakeFiles/designParking.dir/designParking.cpp.o -MF CMakeFiles/designParking.dir/designParking.cpp.o.d -o CMakeFiles/designParking.dir/designParking.cpp.o -c /home/jonatan/GitIvan/Leetcode/designParking.cpp
 
-Leetcode/CMakeFiles/designParking.dir/DesignParking.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/designParking.dir/DesignParking.cpp.i"
-	cd /home/jonatan/GitIvan/build/Leetcode && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonatan/GitIvan/Leetcode/DesignParking.cpp > CMakeFiles/designParking.dir/DesignParking.cpp.i
+Leetcode/CMakeFiles/designParking.dir/designParking.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/designParking.dir/designParking.cpp.i"
+	cd /home/jonatan/GitIvan/build/Leetcode && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jonatan/GitIvan/Leetcode/designParking.cpp > CMakeFiles/designParking.dir/designParking.cpp.i
 
-Leetcode/CMakeFiles/designParking.dir/DesignParking.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/designParking.dir/DesignParking.cpp.s"
-	cd /home/jonatan/GitIvan/build/Leetcode && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonatan/GitIvan/Leetcode/DesignParking.cpp -o CMakeFiles/designParking.dir/DesignParking.cpp.s
+Leetcode/CMakeFiles/designParking.dir/designParking.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/designParking.dir/designParking.cpp.s"
+	cd /home/jonatan/GitIvan/build/Leetcode && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jonatan/GitIvan/Leetcode/designParking.cpp -o CMakeFiles/designParking.dir/designParking.cpp.s
 
 # Object files for target designParking
 designParking_OBJECTS = \
-"CMakeFiles/designParking.dir/DesignParking.cpp.o"
+"CMakeFiles/designParking.dir/designParking.cpp.o"
 
 # External object files for target designParking
 designParking_EXTERNAL_OBJECTS =
 
-Leetcode/designParking: Leetcode/CMakeFiles/designParking.dir/DesignParking.cpp.o
+Leetcode/designParking: Leetcode/CMakeFiles/designParking.dir/designParking.cpp.o
 Leetcode/designParking: Leetcode/CMakeFiles/designParking.dir/build.make
 Leetcode/designParking: Leetcode/CMakeFiles/designParking.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/jonatan/GitIvan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable designParking"

@@ -21,3 +21,6 @@
 /home/jonatan/GitIvan/build/TareaClases/CMakeFiles/point2d.dir
 /home/jonatan/GitIvan/build/TareaClases/CMakeFiles/edit_cache.dir
 /home/jonatan/GitIvan/build/TareaClases/CMakeFiles/rebuild_cache.dir
+/home/jonatan/GitIvan/build/Parcial2/CMakeFiles/cuentaBancaria.dir
+/home/jonatan/GitIvan/build/Parcial2/CMakeFiles/edit_cache.dir
+/home/jonatan/GitIvan/build/Parcial2/CMakeFiles/rebuild_cache.dir

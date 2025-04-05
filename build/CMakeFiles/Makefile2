@@ -68,6 +68,7 @@ all: Tarea1/all
 all: Tarea2/all
 all: Leetcode/all
 all: TareaClases/all
+all: Parcial2/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,6 +77,7 @@ preinstall: Tarea1/preinstall
 preinstall: Tarea2/preinstall
 preinstall: Leetcode/preinstall
 preinstall: TareaClases/preinstall
+preinstall: Parcial2/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -84,6 +86,7 @@ clean: Tarea1/clean
 clean: Tarea2/clean
 clean: Leetcode/clean
 clean: TareaClases/clean
+clean: Parcial2/clean
 .PHONY : clean
 
 #=============================================================================
@@ -121,6 +124,21 @@ Parcial/preinstall:
 # Recursive "clean" directory target.
 Parcial/clean: Parcial/CMakeFiles/Parcial.dir/clean
 .PHONY : Parcial/clean
+
+#=============================================================================
+# Directory level rules for directory Parcial2
+
+# Recursive "all" directory target.
+Parcial2/all: Parcial2/CMakeFiles/cuentaBancaria.dir/all
+.PHONY : Parcial2/all
+
+# Recursive "preinstall" directory target.
+Parcial2/preinstall:
+.PHONY : Parcial2/preinstall
+
+# Recursive "clean" directory target.
+Parcial2/clean: Parcial2/CMakeFiles/cuentaBancaria.dir/clean
+.PHONY : Parcial2/clean
 
 #=============================================================================
 # Directory level rules for directory Tarea1
@@ -258,7 +276,7 @@ Tarea1/CMakeFiles/EjercicioOpcional3.dir/clean:
 Tarea1/CMakeFiles/ejercicio2.dir/all:
 	$(MAKE) $(MAKESILENT) -f Tarea1/CMakeFiles/ejercicio2.dir/build.make Tarea1/CMakeFiles/ejercicio2.dir/depend
 	$(MAKE) $(MAKESILENT) -f Tarea1/CMakeFiles/ejercicio2.dir/build.make Tarea1/CMakeFiles/ejercicio2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jonatan/GitIvan/build/CMakeFiles --progress-num=13,14 "Built target ejercicio2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jonatan/GitIvan/build/CMakeFiles --progress-num=15,16 "Built target ejercicio2"
 .PHONY : Tarea1/CMakeFiles/ejercicio2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -284,7 +302,7 @@ Tarea1/CMakeFiles/ejercicio2.dir/clean:
 Tarea1/CMakeFiles/ejercicio4.dir/all:
 	$(MAKE) $(MAKESILENT) -f Tarea1/CMakeFiles/ejercicio4.dir/build.make Tarea1/CMakeFiles/ejercicio4.dir/depend
 	$(MAKE) $(MAKESILENT) -f Tarea1/CMakeFiles/ejercicio4.dir/build.make Tarea1/CMakeFiles/ejercicio4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jonatan/GitIvan/build/CMakeFiles --progress-num=15,16 "Built target ejercicio4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jonatan/GitIvan/build/CMakeFiles --progress-num=17,18 "Built target ejercicio4"
 .PHONY : Tarea1/CMakeFiles/ejercicio4.dir/all
 
 # Build rule for subdir invocation for target.
@@ -336,7 +354,7 @@ Tarea2/CMakeFiles/calculadora.dir/clean:
 Leetcode/CMakeFiles/twoSum.dir/all:
 	$(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/twoSum.dir/build.make Leetcode/CMakeFiles/twoSum.dir/depend
 	$(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/twoSum.dir/build.make Leetcode/CMakeFiles/twoSum.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jonatan/GitIvan/build/CMakeFiles --progress-num=19,20 "Built target twoSum"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jonatan/GitIvan/build/CMakeFiles --progress-num=21,22 "Built target twoSum"
 .PHONY : Leetcode/CMakeFiles/twoSum.dir/all
 
 # Build rule for subdir invocation for target.
@@ -388,7 +406,7 @@ Leetcode/CMakeFiles/addStrings.dir/clean:
 Leetcode/CMakeFiles/validSudoku.dir/all:
 	$(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/validSudoku.dir/build.make Leetcode/CMakeFiles/validSudoku.dir/depend
 	$(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/validSudoku.dir/build.make Leetcode/CMakeFiles/validSudoku.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jonatan/GitIvan/build/CMakeFiles --progress-num=21,22 "Built target validSudoku"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jonatan/GitIvan/build/CMakeFiles --progress-num=23,24 "Built target validSudoku"
 .PHONY : Leetcode/CMakeFiles/validSudoku.dir/all
 
 # Build rule for subdir invocation for target.
@@ -414,7 +432,7 @@ Leetcode/CMakeFiles/validSudoku.dir/clean:
 Leetcode/CMakeFiles/designParking.dir/all:
 	$(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/designParking.dir/build.make Leetcode/CMakeFiles/designParking.dir/depend
 	$(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/designParking.dir/build.make Leetcode/CMakeFiles/designParking.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jonatan/GitIvan/build/CMakeFiles --progress-num=11,12 "Built target designParking"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jonatan/GitIvan/build/CMakeFiles --progress-num=13,14 "Built target designParking"
 .PHONY : Leetcode/CMakeFiles/designParking.dir/all
 
 # Build rule for subdir invocation for target.
@@ -440,7 +458,7 @@ Leetcode/CMakeFiles/designParking.dir/clean:
 TareaClases/CMakeFiles/point2d.dir/all:
 	$(MAKE) $(MAKESILENT) -f TareaClases/CMakeFiles/point2d.dir/build.make TareaClases/CMakeFiles/point2d.dir/depend
 	$(MAKE) $(MAKESILENT) -f TareaClases/CMakeFiles/point2d.dir/build.make TareaClases/CMakeFiles/point2d.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jonatan/GitIvan/build/CMakeFiles --progress-num=17,18 "Built target point2d"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jonatan/GitIvan/build/CMakeFiles --progress-num=19,20 "Built target point2d"
 .PHONY : TareaClases/CMakeFiles/point2d.dir/all
 
 # Build rule for subdir invocation for target.
@@ -458,6 +476,32 @@ point2d: TareaClases/CMakeFiles/point2d.dir/rule
 TareaClases/CMakeFiles/point2d.dir/clean:
 	$(MAKE) $(MAKESILENT) -f TareaClases/CMakeFiles/point2d.dir/build.make TareaClases/CMakeFiles/point2d.dir/clean
 .PHONY : TareaClases/CMakeFiles/point2d.dir/clean
+
+#=============================================================================
+# Target rules for target Parcial2/CMakeFiles/cuentaBancaria.dir
+
+# All Build rule for target.
+Parcial2/CMakeFiles/cuentaBancaria.dir/all:
+	$(MAKE) $(MAKESILENT) -f Parcial2/CMakeFiles/cuentaBancaria.dir/build.make Parcial2/CMakeFiles/cuentaBancaria.dir/depend
+	$(MAKE) $(MAKESILENT) -f Parcial2/CMakeFiles/cuentaBancaria.dir/build.make Parcial2/CMakeFiles/cuentaBancaria.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/jonatan/GitIvan/build/CMakeFiles --progress-num=11,12 "Built target cuentaBancaria"
+.PHONY : Parcial2/CMakeFiles/cuentaBancaria.dir/all
+
+# Build rule for subdir invocation for target.
+Parcial2/CMakeFiles/cuentaBancaria.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jonatan/GitIvan/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Parcial2/CMakeFiles/cuentaBancaria.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jonatan/GitIvan/build/CMakeFiles 0
+.PHONY : Parcial2/CMakeFiles/cuentaBancaria.dir/rule
+
+# Convenience name for target.
+cuentaBancaria: Parcial2/CMakeFiles/cuentaBancaria.dir/rule
+.PHONY : cuentaBancaria
+
+# clean rule for target.
+Parcial2/CMakeFiles/cuentaBancaria.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Parcial2/CMakeFiles/cuentaBancaria.dir/build.make Parcial2/CMakeFiles/cuentaBancaria.dir/clean
+.PHONY : Parcial2/CMakeFiles/cuentaBancaria.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
