@@ -33,7 +33,7 @@ Grupo: **Ivan Daniel Carpentier, Jonatan García Vásquez**
 <details>
 <summary><strong>Parcial 2 Ivan Daniel Carpentier Rodriguez y Jonatan García</strong></summary>
 
-- **parcial 1 ->** [Parcial2/](./Parcial2/)
+- **parcial 2 ->** [Parcial2/](./Parcial2/)
 
 </details>
 
