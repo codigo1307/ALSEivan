@@ -18,3 +18,6 @@ add_executable(validSudoku validSudoku.cpp)
 
 # Agregar el ejecutable
 add_executable(designParking designParking.cpp)
+
+# Agregar el ejecutable
+add_executable(hashSet hashSet.cpp)
