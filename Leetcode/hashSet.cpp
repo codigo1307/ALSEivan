@@ -60,3 +60,17 @@ class MyHashSet {
         }
     };
     
+    int main()
+{
+    MyHashSet myHash; // Crear una instancia de la clase Solution
+    myHash.add(1); // Agregar la clave 1 al conjunto
+    myHash.add(2); // Agregar la clave 2 al conjunto
+    cout << myHash.contains(1) << "\n"; // Comprobar si la clave 1 está en el conjunto (debería ser true)
+    cout << myHash.contains(3) << "\n"; // Comprobar si la clave 3 está en el conjunto (debería ser false)
+    myHash.add(2); // Agregar la clave 2 nuevamente (no debería hacer nada)
+    cout << myHash.contains(2) << "\n"; // Comprobar si la clave 2 está en el conjunto (debería ser true)
+    myHash.remove(2); // Eliminar la clave 2 del conjunto
+    cout << myHash.contains(2) << "\n"; // Comprobar si la clave 2 está en el conjunto (debería ser false)
+
+    return 0; // Finalizar el programa
+}

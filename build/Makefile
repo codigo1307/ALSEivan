@@ -247,6 +247,19 @@ designParking/fast:
 .PHONY : designParking/fast
 
 #=============================================================================
+# Target rules for targets named hashSet
+
+# Build rule for target.
+hashSet: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hashSet
+.PHONY : hashSet
+
+# fast build rule for target.
+hashSet/fast:
+	$(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/hashSet.dir/build.make Leetcode/CMakeFiles/hashSet.dir/build
+.PHONY : hashSet/fast
+
+#=============================================================================
 # Target rules for targets named point2d
 
 # Build rule for target.
@@ -289,6 +302,7 @@ help:
 	@echo "... designParking"
 	@echo "... ejercicio2"
 	@echo "... ejercicio4"
+	@echo "... hashSet"
 	@echo "... point2d"
 	@echo "... twoSum"
 	@echo "... validSudoku"

@@ -172,6 +172,20 @@ designParking/fast:
 	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/designParking.dir/build.make Leetcode/CMakeFiles/designParking.dir/build
 .PHONY : designParking/fast
 
+# Convenience name for target.
+Leetcode/CMakeFiles/hashSet.dir/rule:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Leetcode/CMakeFiles/hashSet.dir/rule
+.PHONY : Leetcode/CMakeFiles/hashSet.dir/rule
+
+# Convenience name for target.
+hashSet: Leetcode/CMakeFiles/hashSet.dir/rule
+.PHONY : hashSet
+
+# fast build rule for target.
+hashSet/fast:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/hashSet.dir/build.make Leetcode/CMakeFiles/hashSet.dir/build
+.PHONY : hashSet/fast
+
 addStrings.o: addStrings.cpp.o
 .PHONY : addStrings.o
 
@@ -219,6 +233,30 @@ designParking.s: designParking.cpp.s
 designParking.cpp.s:
 	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/designParking.dir/build.make Leetcode/CMakeFiles/designParking.dir/designParking.cpp.s
 .PHONY : designParking.cpp.s
+
+hashSet.o: hashSet.cpp.o
+.PHONY : hashSet.o
+
+# target to build an object file
+hashSet.cpp.o:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/hashSet.dir/build.make Leetcode/CMakeFiles/hashSet.dir/hashSet.cpp.o
+.PHONY : hashSet.cpp.o
+
+hashSet.i: hashSet.cpp.i
+.PHONY : hashSet.i
+
+# target to preprocess a source file
+hashSet.cpp.i:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/hashSet.dir/build.make Leetcode/CMakeFiles/hashSet.dir/hashSet.cpp.i
+.PHONY : hashSet.cpp.i
+
+hashSet.s: hashSet.cpp.s
+.PHONY : hashSet.s
+
+# target to generate assembly for a file
+hashSet.cpp.s:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/hashSet.dir/build.make Leetcode/CMakeFiles/hashSet.dir/hashSet.cpp.s
+.PHONY : hashSet.cpp.s
 
 twoSum.o: twoSum.cpp.o
 .PHONY : twoSum.o
@@ -278,6 +316,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... addStrings"
 	@echo "... designParking"
+	@echo "... hashSet"
 	@echo "... twoSum"
 	@echo "... validSudoku"
 	@echo "... addStrings.o"
@@ -286,6 +325,9 @@ help:
 	@echo "... designParking.o"
 	@echo "... designParking.i"
 	@echo "... designParking.s"
+	@echo "... hashSet.o"
+	@echo "... hashSet.i"
+	@echo "... hashSet.s"
 	@echo "... twoSum.o"
 	@echo "... twoSum.i"
 	@echo "... twoSum.s"
