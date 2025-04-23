@@ -9,6 +9,9 @@ using namespace std;
 /**
  * @class Twitter
  * @brief Simula una red social donde los usuarios pueden publicar tweets, seguir a otros usuarios y obtener un feed de noticias.
+ * 
+ * Esta clase permite realizar operaciones como publicar tweets, seguir y dejar de seguir a otros usuarios,
+ * y obtener un feed con los 10 tweets más recientes de un usuario y las personas que sigue.
  */
 class Twitter {
 private:
@@ -19,69 +22,71 @@ private:
 public:
     /**
      * @brief Constructor de la clase Twitter.
+     * 
      * Inicializa el timestamp en 0.
      */
-    Twitter() {
-        timestamp = 0;
-    }
+    Twitter() : timestamp(0) {}
 
     /**
      * @brief Publica un tweet para un usuario.
+     * 
      * @param userId ID del usuario que publica el tweet.
      * @param tweetId ID del tweet a publicar.
      */
     void postTweet(int userId, int tweetId) {
-        tweets[userId].push_back({timestamp++, tweetId});
+        tweets[userId].emplace_back(timestamp++, tweetId);
     }
 
     /**
      * @brief Obtiene el feed de noticias de un usuario.
+     * 
      * @param userId ID del usuario que solicita el feed.
      * @return Vector con los IDs de los 10 tweets más recientes en el feed.
      */
     vector<int> getNewsFeed(int userId) {
-        priority_queue<pair<int, int>> pq; // Cola de prioridad para ordenar los tweets por timestamp.
+        priority_queue<pair<int, int>> feed;
 
-        // Agregar los tweets del usuario al feed.
-        for (auto &tweet : tweets[userId]) {
-            pq.push(tweet);
+        // Agregar tweets del propio usuario
+        for (const auto& tweet : tweets[userId]) {
+            feed.push(tweet);
         }
 
-        // Agregar los tweets de los usuarios seguidos al feed.
+        // Agregar tweets de usuarios seguidos
         for (int followeeId : following[userId]) {
-            for (auto &tweet : tweets[followeeId]) {
-                pq.push(tweet);
+            for (const auto& tweet : tweets[followeeId]) {
+                feed.push(tweet);
             }
         }
 
-        vector<int> res; // Almacena los IDs de los tweets en el feed.
-        int count = 0; // Limita el feed a los 10 tweets más recientes.
-        while (!pq.empty() && count < 10) {
-            res.push_back(pq.top().second);
-            pq.pop();
-            count++;
+        vector<int> result;
+        for (int i = 0; i < 10 && !feed.empty(); ++i) {
+            result.push_back(feed.top().second);
+            feed.pop();
         }
-        return res;
+
+        return result;
     }
 
     /**
      * @brief Permite que un usuario siga a otro.
+     * 
      * @param followerId ID del usuario que desea seguir a otro.
      * @param followeeId ID del usuario a seguir.
      */
     void follow(int followerId, int followeeId) {
-        if (followerId != followeeId) // Un usuario no puede seguirse a sí mismo.
+        if (followerId != followeeId) {
             following[followerId].insert(followeeId);
+        }
     }
 
     /**
      * @brief Permite que un usuario deje de seguir a otro.
+     * 
      * @param followerId ID del usuario que desea dejar de seguir a otro.
      * @param followeeId ID del usuario a dejar de seguir.
      */
     void unfollow(int followerId, int followeeId) {
-        if (following[followerId].count(followeeId))
-            following[followerId].erase(followeeId);
+        following[followerId].erase(followeeId);
     }
 };
 
