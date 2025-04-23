@@ -21,3 +21,6 @@ add_executable(designParking designParking.cpp)
 
 # Agregar el ejecutable
 add_executable(hashSet hashSet.cpp)
+
+# Agregar el ejecutable
+add_executable(designTwitter designTwitter.cpp)
