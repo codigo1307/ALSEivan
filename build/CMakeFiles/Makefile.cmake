@@ -14,6 +14,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/jonatan/GitIvan/Tarea1/CMakeLists.txt"
   "/home/jonatan/GitIvan/Tarea2/CMakeLists.txt"
   "/home/jonatan/GitIvan/TareaClases/CMakeLists.txt"
+  "/home/jonatan/GitIvan/TareaSTL/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
@@ -52,6 +53,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "Leetcode/CMakeFiles/CMakeDirectoryInformation.cmake"
   "TareaClases/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Parcial2/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "TareaSTL/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -67,6 +69,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "Leetcode/CMakeFiles/validSudoku.dir/DependInfo.cmake"
   "Leetcode/CMakeFiles/designParking.dir/DependInfo.cmake"
   "Leetcode/CMakeFiles/hashSet.dir/DependInfo.cmake"
+  "Leetcode/CMakeFiles/designTwitter.dir/DependInfo.cmake"
   "TareaClases/CMakeFiles/point2d.dir/DependInfo.cmake"
   "Parcial2/CMakeFiles/cuentaBancaria.dir/DependInfo.cmake"
+  "TareaSTL/CMakeFiles/ejemplosSTL.dir/DependInfo.cmake"
   )

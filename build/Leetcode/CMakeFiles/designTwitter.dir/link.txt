@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/designTwitter.dir/designTwitter.cpp.o -o designTwitter 

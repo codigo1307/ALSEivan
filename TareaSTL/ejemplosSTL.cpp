@@ -12,12 +12,6 @@
 using namespace std;
 
 // ---------- Utilidad: Limpieza de texto ----------
-/**
- * @brief Limpia una palabra eliminando signos de puntuación y convirtiéndola a minúsculas.
- * 
- * @param palabra Palabra a limpiar.
- * @return Palabra limpia.
- */
 string limpiarPalabra(string palabra) {
     palabra.erase(remove_if(palabra.begin(), palabra.end(), ::ispunct), palabra.end());
     transform(palabra.begin(), palabra.end(), palabra.begin(), ::tolower);
@@ -25,12 +19,6 @@ string limpiarPalabra(string palabra) {
 }
 
 // ---------- Ejercicio 1: Palabras únicas (set) ----------
-/**
- * @brief Lee un archivo y muestra las palabras únicas utilizando un `set`.
- * 
- * Este ejercicio utiliza un conjunto (`set`) para almacenar palabras únicas
- * después de limpiarlas de signos de puntuación y convertirlas a minúsculas.
- */
 void ejercicio1() {
     ifstream archivo("sampleFile.txt");
     if (!archivo) {
@@ -54,12 +42,6 @@ void ejercicio1() {
 }
 
 // ---------- Ejercicio 2: Frecuencia de palabras (map) ----------
-/**
- * @brief Lee un archivo y muestra la frecuencia de cada palabra utilizando un `map`.
- * 
- * Este ejercicio utiliza un mapa (`map`) para contar cuántas veces aparece cada palabra
- * después de limpiarla de signos de puntuación y convertirla a minúsculas.
- */
 void ejercicio2() {
     ifstream archivo("sampleFile.txt");
     if (!archivo) {
@@ -83,18 +65,11 @@ void ejercicio2() {
 }
 
 // ---------- Ejercicio 3: Cola de prioridad (priority_queue) ----------
-/**
- * @brief Muestra una lista de tareas ordenadas por prioridad utilizando una `priority_queue`.
- * 
- * Este ejercicio utiliza una cola de prioridad (`priority_queue`) para almacenar tareas
- * con diferentes niveles de prioridad y mostrarlas en orden descendente.
- */
 void ejercicio3() {
     struct Tarea {
         int prioridad;
         string descripcion;
 
-        // Sobrecarga del operador < para ordenar por prioridad descendente.
         bool operator<(const Tarea& otra) const {
             return prioridad < otra.prioridad; // Mayor prioridad primero
         }
@@ -116,12 +91,6 @@ void ejercicio3() {
 }
 
 // ---------- Ejercicio 4: Buscar primer número par (find_if) ----------
-/**
- * @brief Busca el primer número par en un vector utilizando `find_if`.
- * 
- * Este ejercicio utiliza un lambda para definir la condición de búsqueda
- * y la función `find_if` para encontrar el primer número par en un vector.
- */
 void ejercicio4() {
     vector<int> numeros = {7, 13, 9, 8, 15, 6, 21};
     auto esPar = [](int n) { return n % 2 == 0; };
@@ -137,12 +106,6 @@ void ejercicio4() {
 }
 
 // ---------- Ejercicio 5: Ordenar pares descendente (sort) ----------
-/**
- * @brief Ordena un vector de pares en orden descendente utilizando `sort` con un comparador personalizado.
- * 
- * Este ejercicio utiliza un lambda para definir el criterio de ordenación
- * y ordena un vector de pares en función del primer elemento en orden descendente.
- */
 void ejercicio5() {
     vector<pair<int, string>> datos = {
         {5, "manzana"}, {2, "banana"}, {8, "naranja"},
@@ -160,12 +123,6 @@ void ejercicio5() {
 }
 
 // ---------- Menú principal ----------
-/**
- * @brief Menú principal que permite al usuario seleccionar y ejecutar diferentes ejercicios.
- * 
- * Este menú presenta opciones para ejecutar cada uno de los ejercicios relacionados con
- * las estructuras de datos de la STL (Standard Template Library).
- */
 int main() {
     int opcion;
     do {

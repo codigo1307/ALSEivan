@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/ejemplosSTL.dir/ejemplosSTL.cpp.o -o ejemplosSTL 

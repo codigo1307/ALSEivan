@@ -260,6 +260,19 @@ hashSet/fast:
 .PHONY : hashSet/fast
 
 #=============================================================================
+# Target rules for targets named designTwitter
+
+# Build rule for target.
+designTwitter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 designTwitter
+.PHONY : designTwitter
+
+# fast build rule for target.
+designTwitter/fast:
+	$(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/designTwitter.dir/build.make Leetcode/CMakeFiles/designTwitter.dir/build
+.PHONY : designTwitter/fast
+
+#=============================================================================
 # Target rules for targets named point2d
 
 # Build rule for target.
@@ -285,6 +298,19 @@ cuentaBancaria/fast:
 	$(MAKE) $(MAKESILENT) -f Parcial2/CMakeFiles/cuentaBancaria.dir/build.make Parcial2/CMakeFiles/cuentaBancaria.dir/build
 .PHONY : cuentaBancaria/fast
 
+#=============================================================================
+# Target rules for targets named ejemplosSTL
+
+# Build rule for target.
+ejemplosSTL: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ejemplosSTL
+.PHONY : ejemplosSTL
+
+# fast build rule for target.
+ejemplosSTL/fast:
+	$(MAKE) $(MAKESILENT) -f TareaSTL/CMakeFiles/ejemplosSTL.dir/build.make TareaSTL/CMakeFiles/ejemplosSTL.dir/build
+.PHONY : ejemplosSTL/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -300,6 +326,8 @@ help:
 	@echo "... calculadora"
 	@echo "... cuentaBancaria"
 	@echo "... designParking"
+	@echo "... designTwitter"
+	@echo "... ejemplosSTL"
 	@echo "... ejercicio2"
 	@echo "... ejercicio4"
 	@echo "... hashSet"

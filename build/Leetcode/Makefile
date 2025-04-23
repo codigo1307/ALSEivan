@@ -186,6 +186,20 @@ hashSet/fast:
 	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/hashSet.dir/build.make Leetcode/CMakeFiles/hashSet.dir/build
 .PHONY : hashSet/fast
 
+# Convenience name for target.
+Leetcode/CMakeFiles/designTwitter.dir/rule:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Leetcode/CMakeFiles/designTwitter.dir/rule
+.PHONY : Leetcode/CMakeFiles/designTwitter.dir/rule
+
+# Convenience name for target.
+designTwitter: Leetcode/CMakeFiles/designTwitter.dir/rule
+.PHONY : designTwitter
+
+# fast build rule for target.
+designTwitter/fast:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/designTwitter.dir/build.make Leetcode/CMakeFiles/designTwitter.dir/build
+.PHONY : designTwitter/fast
+
 addStrings.o: addStrings.cpp.o
 .PHONY : addStrings.o
 
@@ -233,6 +247,30 @@ designParking.s: designParking.cpp.s
 designParking.cpp.s:
 	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/designParking.dir/build.make Leetcode/CMakeFiles/designParking.dir/designParking.cpp.s
 .PHONY : designParking.cpp.s
+
+designTwitter.o: designTwitter.cpp.o
+.PHONY : designTwitter.o
+
+# target to build an object file
+designTwitter.cpp.o:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/designTwitter.dir/build.make Leetcode/CMakeFiles/designTwitter.dir/designTwitter.cpp.o
+.PHONY : designTwitter.cpp.o
+
+designTwitter.i: designTwitter.cpp.i
+.PHONY : designTwitter.i
+
+# target to preprocess a source file
+designTwitter.cpp.i:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/designTwitter.dir/build.make Leetcode/CMakeFiles/designTwitter.dir/designTwitter.cpp.i
+.PHONY : designTwitter.cpp.i
+
+designTwitter.s: designTwitter.cpp.s
+.PHONY : designTwitter.s
+
+# target to generate assembly for a file
+designTwitter.cpp.s:
+	cd /home/jonatan/GitIvan/build && $(MAKE) $(MAKESILENT) -f Leetcode/CMakeFiles/designTwitter.dir/build.make Leetcode/CMakeFiles/designTwitter.dir/designTwitter.cpp.s
+.PHONY : designTwitter.cpp.s
 
 hashSet.o: hashSet.cpp.o
 .PHONY : hashSet.o
@@ -316,6 +354,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... addStrings"
 	@echo "... designParking"
+	@echo "... designTwitter"
 	@echo "... hashSet"
 	@echo "... twoSum"
 	@echo "... validSudoku"
@@ -325,6 +364,9 @@ help:
 	@echo "... designParking.o"
 	@echo "... designParking.i"
 	@echo "... designParking.s"
+	@echo "... designTwitter.o"
+	@echo "... designTwitter.i"
+	@echo "... designTwitter.s"
 	@echo "... hashSet.o"
 	@echo "... hashSet.i"
 	@echo "... hashSet.s"

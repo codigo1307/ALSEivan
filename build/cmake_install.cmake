@@ -50,6 +50,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/jonatan/GitIvan/build/Leetcode/cmake_install.cmake")
   include("/home/jonatan/GitIvan/build/TareaClases/cmake_install.cmake")
   include("/home/jonatan/GitIvan/build/Parcial2/cmake_install.cmake")
+  include("/home/jonatan/GitIvan/build/TareaSTL/cmake_install.cmake")
 
 endif()
 
